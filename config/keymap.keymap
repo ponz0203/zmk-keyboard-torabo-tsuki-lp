@@ -30,11 +30,11 @@
 
         Number {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                        &trans        &trans        &trans        &trans      &trans        &trans
-&trans  &trans  &trans  &trans     &trans     &trans                        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS   &kp PLUS      &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA   &kp K_BACK    &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &mkp RCLK     &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans        &trans        &trans        &trans        &kp SLASH   &kp ASTERISK  &trans
+&trans  &trans   &trans  &trans  &trans  &trans                        &trans        &trans        &trans        &trans      &trans        &trans
+&trans  &kp TAB  &trans  &trans  &trans  &trans                        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS   &kp DELETE    &trans
+&trans  &trans   &trans  &none   &none   &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA   &kp K_BACK    &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp SLASH     &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &kp PLUS    &kp ASTERISK  &trans
             >;
         };
 
@@ -55,6 +55,26 @@
 &trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
