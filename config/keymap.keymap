@@ -6,15 +6,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -24,8 +16,8 @@
 &trans  &trans      &trans    &trans    &trans  &trans                                                       &trans       &trans  &trans     &trans     &trans       &trans
 &trans  &kp Q       &kp W     &kp E     &kp R   &kp T                                                        &kp Y        &kp U   &kp I      &kp O      &kp P        &trans
 &trans  &kp A       &kp S     &kp D     &kp F   &kp G                 &trans                     &trans      &kp H        &kp J   &kp K      &kp L      &lt 1 ENTER  &trans
-&trans  &kp Z       &kp X     &kp C     &kp V   &kp B                 &mt LEFT_COMMAND UP_ARROW  &lt 8 TAB   &kp N        &kp M   &kp COMMA  &kp DOT    &lt 7 MINUS  &trans
-&trans  &kp ESCAPE  &kp LGUI  &kp LALT  &trans  &mt LEFT_SHIFT SPACE  &mt LCTRL UP_ARROW         &lt 6 LEFT  &lt 5 RIGHT  &trans  &trans     &kp PSCRN  &kp ESCAPE   &trans
+&trans  &kp Z       &kp X     &kp C     &kp V   &kp B                 &mt LEFT_COMMAND UP_ARROW  &lt 9 TAB   &kp N        &kp M   &kp COMMA  &kp DOT    &lt 8 MINUS  &trans
+&trans  &kp ESCAPE  &kp LGUI  &kp LALT  &trans  &mt LEFT_SHIFT SPACE  &mt LCTRL UP_ARROW         &lt 7 LEFT  &lt 6 RIGHT  &trans  &trans     &kp PSCRN  &kp ESCAPE   &trans
             >;
 
             sensor-bindings = <&hires_dial_scroll 1 1>;
@@ -48,11 +40,23 @@
 &trans  &trans      &trans    &trans    &trans  &trans                                                       &trans       &trans  &trans     &trans             &trans       &trans
 &trans  &kp Q       &kp W     &kp E     &kp R   &kp T                                                        &kp Y        &kp U   &kp I      &kp O              &kp P        &trans
 &trans  &kp A       &kp S     &kp D     &kp F   &kp G                 &trans                     &trans      &kp H        &kp J   &kp K      &kp L              &lt 1 ENTER  &trans
-&trans  &kp Z       &kp X     &kp C     &kp V   &kp B                 &mt LEFT_CONTROL UP_ARROW  &lt 8 TAB   &kp N        &kp M   &kp COMMA  &kp DOT            &lt 7 MINUS  &trans
-&trans  &kp ESCAPE  &kp LGUI  &kp LALT  &trans  &mt LEFT_SHIFT SPACE  &mt LCTRL UP_ARROW         &lt 6 LEFT  &lt 5 RIGHT  &trans  &trans     &kp RS(RG(KP_N5))  &kp ESCAPE   &trans
+&trans  &kp Z       &kp X     &kp C     &kp V   &kp B                 &mt LEFT_CONTROL UP_ARROW  &lt 9 TAB   &kp N        &kp M   &kp COMMA  &kp DOT            &lt 8 MINUS  &trans
+&trans  &kp ESCAPE  &kp LGUI  &kp LALT  &trans  &mt LEFT_SHIFT SPACE  &mt LCTRL UP_ARROW         &lt 7 LEFT  &lt 6 RIGHT  &trans  &trans     &kp RS(RG(KP_N5))  &kp ESCAPE   &trans
             >;
 
             sensor-bindings = <&hires_dial_scroll 1 1>;
+        };
+
+        IOSMOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans                  &trans           &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &mt RG(MINUS) RG(PLUS)  &kp RC(RS(TAB))  &msc SCRL_UP    &kp RC(TAB)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt RG(RS(Z)) RG(Z)     &mkp LCLK        &mkp MCLK       &mkp RCLK        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(T)  &kp RG(W)               &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(C)  &kp RG(V)               &trans           &trans          &kp RG(R)        &trans  &trans
+            >;
+
+            sensor-bindings = <&hires_dial_scroll 10 1>;
         };
 
         layer_2 {
