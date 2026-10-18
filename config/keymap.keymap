@@ -69,13 +69,13 @@
             sensor-bindings = <&hires_dial_scroll 10 1>;
         };
 
-        layer_4 {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans       &trans                             &trans                               &trans                    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans       &trans                             &trans                               &trans                    &kp DELETE     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp AT_SIGN  &mt LEFT_BRACKET LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS  &mt SEMICOLON COLON       &kp BACKSPACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp GRAVE    &kp DQT                            &kp UNDER                            &mt EXCLAMATION QUESTION  &kp SLASH      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans                             &trans                               &trans                    &trans         &trans
             >;
         };
 
