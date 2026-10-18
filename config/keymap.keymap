@@ -33,11 +33,11 @@
 
         winmouse {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                     &trans                     &trans           &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                     &mt RC(KP_MINUS) RC(PLUS)  &kp RC(RS(TAB))  &msc SCRL_UP    &kp RC(TAB)      &trans  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans     &mt RC(RS(Z)) LC(Z)        &mkp LCLK        &mkp MCLK       &mkp RCLK        &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &kp RC(T)  &kp RC(W)                  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &kp LC(C)  &mt RG(V) RC(V)            &trans           &trans          &kp LC(R)        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans                     &trans           &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &mt RC(KP_MINUS) RC(PLUS)  &kp RC(RS(TAB))  &msc SCRL_UP    &kp RC(TAB)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt RC(RS(Z)) LC(Z)        &mkp LCLK        &mkp MCLK       &mkp RCLK        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RC(T)  &kp RC(W)                  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &mt RG(V) RC(V)            &trans           &trans          &kp LC(R)        &trans  &trans
             >;
 
             sensor-bindings = <&hires_dial_scroll 10 1>;
