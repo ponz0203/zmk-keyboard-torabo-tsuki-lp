@@ -59,11 +59,11 @@
 
         NUMBER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans                  &trans        &trans        &trans         &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &mt RG(MINUS) RG(PLUS)  &kp N7        &kp N8        &kp N9         &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt RG(RS(Z)) RG(Z)     &kp NUMBER_4  &kp N5        &kp NUMBER_6   &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(T)  &kp RG(W)               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &mt ASTERISK SLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RG(C)  &kp RG(V)               &trans        &trans        &mt COMMA DOT  &kp ESCAPE          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans               &trans        &trans        &trans         &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &mt MINUS PLUS       &kp N7        &kp N8        &kp N9         &kp DELETE          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt SEMICOLON COLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp BACKSPACE       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp RG(N0)           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &mt ASTERISK SLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans               &trans        &trans        &mt COMMA DOT  &kp ESCAPE          &trans
             >;
 
             sensor-bindings = <&hires_dial_scroll 10 1>;
